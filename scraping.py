@@ -26,7 +26,7 @@ for i in range(1, len(temp_list)):
 
 df = pd.DataFrame(
     list(zip(name, distance, mass, radius)),
-    headers = ["Star_name", "Distance", "Mass", "Radius"]
+    columns = ["Star_name", "Distance", "Mass", "Radius"]
 )
 
 df.to_csv("final.csv")
